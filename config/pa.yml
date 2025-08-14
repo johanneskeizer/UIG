@@ -1,0 +1,10 @@
+project: pa
+pinecone_index: pa-voice-notes
+embedding_model: openai-text-embedding-3-large
+chunk_size: 400
+chunk_overlap: 50
+content_types: [pdf, txt, docx, html, md, audio]
+input_path: /path/to/input/files
+metadata:
+  project: "PA"
+  user: "your_name"
