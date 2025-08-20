@@ -8,6 +8,7 @@ __pycache__/
 
 # C extensions
 *.so
+.env./
 
 # Distribution / packaging
 .Python
@@ -209,3 +210,12 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 >>>>>>> 5940807182e3c5763e369045ab5e52de2868b4b1
+
+# ignore venv & secrets
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.env.pa
+.env.sciai

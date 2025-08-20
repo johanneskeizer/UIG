@@ -1,0 +1,13 @@
+project: sciai
+pinecone_index: pd-knowledge-768
+embedding_model: pubmedbert
+dimension: 768
+env_file: .env.sciai
+chunk_size: 400
+chunk_overlap: 50
+input_streams:
+  - type: papers
+    path: ./test_data/fulltexts/
+    content_types: [pdf, txt, docx]
+metadata:
+  project: "PDknowledge"

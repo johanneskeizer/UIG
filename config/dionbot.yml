@@ -1,0 +1,11 @@
+project: dionbot
+pinecone_index: dionbot
+embedding_model: openai
+chunk_size: 400
+chunk_overlap: 50
+content_types: [pdf, txt, docx, html, md, audio]
+input_path: ./test_data/
+metadata:
+  project: "DionBot "
+pinecone_index: pa
+"

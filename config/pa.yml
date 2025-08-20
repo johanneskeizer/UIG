@@ -1,10 +1,14 @@
 project: pa
-pinecone_index: pa-voice-notes
-embedding_model: openai-text-embedding-3-large
+pinecone_index: pa
+embedding_model: openai-3-large     # was openai-3-small
+dimension: 3072                      # match the existing index!
+env_file: .env.pa
 chunk_size: 400
 chunk_overlap: 50
-content_types: [pdf, txt, docx, html, md, audio]
-input_path: /path/to/input/files
+input_streams:
+  - type: notes
+    path: ./test_data/pa/
+    content_types: [txt, md]
 metadata:
   project: "PA"
-  user: "your_name"
+  assistant: "pa"
